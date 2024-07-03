@@ -1,30 +1,38 @@
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: hsl(0, 0%, 95%);
 }
 
 #calculator {
     font-family: Helvetica, sans-serif;
-    background-color: hsl(340, 57%, 40%);
+    background-color: hsl(340, 50%, 40%);
     overflow: hidden;
-    border-radius: 10px;
-    max-width: 550px;
+    border-radius: 20px;
+    max-width: 500px;
+    height: auto;
 }
 
 #display {
+    box-sizing: border-box;
     width: 100%;
+    padding: 10px;
     font-size: 5rem;
-    text-align: right;
+    text-align: center;
     border: none;
+    background-color: hsl(0, 69%, 10%);
 }
 
 #button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    padding: 25px;
+    gap: 10px;
+    padding: 20px;
 }
 
 button {
@@ -45,4 +53,16 @@ button:hover {
 
 button:active {
     background-color: hsl(340, 57%, 20%);
+}
+
+.operatorBtn {
+    background-color: hsl(340, 63%, 52%);
+}
+
+.operatorBtn:hover {
+    background-color: hsl(340, 63%, 42%);
+}
+
+.operatorBtn:active {
+    background-color: hsl(340, 63%, 32%);
 }
