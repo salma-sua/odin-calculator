@@ -1,5 +1,14 @@
-function addToScreen() {}
+const display = document.getElementById('display');
 
-function clearScreen() {}
+function addToScreen(input) {
+    display.value += input;
+}
 
-function calculate() {}
+function clearScreen() {
+    display.value = '';
+}
+
+/*function calculate() {
+    display.value
+}
+*/
